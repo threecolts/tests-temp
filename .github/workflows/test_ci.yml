@@ -12,6 +12,6 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
-        repository: pbetala/tests-temp2
-        event-type: my-event
+        repository: threecolts/qa-playwright-tests
+        event-type: push
         client-payload: '{"github": ${{ toJson(github) }}}'
