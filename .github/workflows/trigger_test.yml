@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: trigger automated tests in another repo
-      uses: peter-evans/repository_dispatch@v2
+      uses: peter-evans/repository_dispatch@v3
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         repository: threecolts/qa-playwright-tests
