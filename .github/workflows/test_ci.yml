@@ -1,0 +1,16 @@
+name: developer side ci file
+on: 
+  
+  workflow_dispatch:
+  
+jobs:
+  dev-trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: trigger automated tests in tests-temp2 repo
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN2 }}
+        repository: threecolts/tests-temp2
+        event-type: my-event
