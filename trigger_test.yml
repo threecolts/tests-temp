@@ -1,3 +1,4 @@
+name: trigger tests in another repository
 on:
   push:
     branches: [ "main" ]
