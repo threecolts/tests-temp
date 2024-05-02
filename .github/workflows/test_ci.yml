@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: trigger automated tests in tests-temp2 repo
-      uses: peter-evans/repository-dispatch@v3
+      uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         repository: pbetala/tests-temp2
