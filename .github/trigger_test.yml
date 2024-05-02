@@ -1,5 +1,11 @@
 name: trigger tests in another repository
-on: workflow_dispatch:
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
   
 jobs:
   trigger-test:
